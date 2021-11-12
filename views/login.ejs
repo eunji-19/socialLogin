@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/login/css/index.css" />
+    <script
+      src="https://static.nid.naver.com/js/naverLogin_implicit-1.0.3.js"
+      charset="utf-8"
+    ></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+  </head>
+
+  <body>
+    <div class="p-8">
+      <h3 class="text-4xl font-bold text-center mt-8">환영합니다 🎉</h3>
+      </div>
+      <div class="p-8">
+      <h3 class="text-4xl font-bold text-center mt-8">로그인</h3>
+    </div>
+      <div class="flex flex-col mt-12 items-center space-y-2">
+        <a class="hidden" id="naver_id_login"></a
+        >
+        <a class="primary-btn" id="kakao-login" >
+          <img class="logo" src="/login/logos/kakao.png" />
+          <div class="text text-lg">카카오 로그인</div>
+        </a>
+        <a class="primary-btn" id="fb-login"
+          ><img class="logo" src="/login/logos/facebook.png" />
+          <div class="text text-lg">Facebook으로 로그인</div> </a
+        >
+        <a class="primary-btn" id="naver-login" href="/oauth/naver"
+          ><img class="logo" src="/login/logos/naver.png" />
+          <div class="text text-lg">네이버 아이디로 로그인</div>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
